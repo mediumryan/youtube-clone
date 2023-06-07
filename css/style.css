@@ -1,0 +1,266 @@
+/* 폰트 */
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+html {
+  font-size : 16px;
+}
+
+i {
+  cursor: pointer;
+}
+
+button {
+  background : none;
+  border : none;
+  outline : none;
+  cursor: pointer;
+  color : #fff;
+}
+
+#main-container {
+  padding : 2rem 4rem;
+  height : 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: #fff;
+  font-family: 'TheJamsil5Bold';
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+}
+
+.header-title {
+  cursor: pointer;
+  display : flex;
+  align-items: center;
+}
+
+.header-title span {
+  font-weight : 700;
+  margin-left: .25rem;
+}
+
+.header-menu {
+  display : flex;
+}
+
+.header-menu i {
+  padding : .25rem .5rem;
+  margin : 0 .25rem;
+}
+
+#video {
+  width : 100%;
+  margin: 2rem 0;
+  position : relative;
+}
+
+#video video {
+  display:block;
+	width:100%;
+	
+  border-radius: 12px;
+}
+
+#bottom {
+  width: 100%;
+  height: 100%;
+  display : flex;
+  justify-content: center;
+}
+
+.bottom-left,.bottom-right {
+  width : 47.5%;
+  height : 100%;
+}
+
+.left-tags {
+  margin-bottom: 1rem;
+  color: lightskyblue;
+  font-size : .75rem;
+}
+
+.left-tags > * {
+  margin-right: .25rem;
+}
+
+.left-title-container {
+  margin-bottom : .5rem;
+  display: flex;
+  align-items : center;
+}
+
+.left-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin-right: .5rem;
+}
+
+.left-title-btn {
+  transition: 300ms;
+}
+
+.more {
+  -webkit-line-clamp: 10;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: 300ms;
+}
+
+.left-view {
+  color : #777;
+  font-size : .75rem;
+  margin-bottom: 1rem;
+}
+
+.left-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding : 0 1rem;
+  margin-bottom: 1rem;
+}
+
+.left-btns {
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left-btns span {
+  margin-top: .5rem;
+}
+
+.left-channel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-top: 2px solid #777;
+  border-bottom: 2px solid #777;
+}
+
+.channel-left-side {
+  display: flex;
+  align-items: center;
+}
+
+.left-channel img {
+  width : 36px;
+  height : 36px;
+  border-radius: 50%;
+  background-color : #cde9fb;
+  border : none;
+  margin-right: .5rem;
+}
+  
+.channel-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel-sub {
+  font-size : .75rem;
+  margin-top: .25rem;
+  color: #777;
+}
+
+.channel-right-side {
+  text-transform: uppercase;
+  font-weight : 700;
+}
+
+.bottom-right {
+  display : flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  max-height : 250px;
+}
+
+.right-up-next {
+  font-size : .75rem;
+  color : #777;
+  margin-bottom: 1rem;
+}
+
+.right-content-box {
+  height: 100%;
+  overflow: scroll;
+}
+
+.right-content {
+  display: flex;
+  margin-bottom: 1rem;
+  position : relative;
+}
+  
+.right-content img {
+  width : 33%;
+  margin-right: .5rem;
+  border-radius: 4px;
+  background-color: #394456;
+  cursor: pointer;
+}
+
+.right-content-description {
+  padding: .5rem 1.5rem .5rem .5rem;
+}
+
+.right-content-description > * {
+  margin-bottom: .5rem;
+}
+
+.right-title {
+  cursor: pointer;
+}
+  
+.right-views {
+  color : #777;
+  font-size : .75rem;
+}
+
+.right-menu-btn {
+  position: absolute;
+  top: .5rem;
+  right: 0rem;
+}
+/* 갤럭시 S20 울트라(세로) 기준 */
+@media screen and (max-width : 413px) {
+  #bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bottom-left,.bottom-right {
+    width : 100%;
+  }
+  .bottom-right {
+    margin-top: 1rem;
+    max-height : none;
+  }
+}
+/* 갤럭시 S20 울트라(가로) 기준 */
+@media screen and (max-width : 916px) {
+  html {
+    font-size : 13px;
+  }
+  #main-container {
+    padding : 1rem 1.5rem;
+  }
+  #video video {
+    width : 75%;
+    margin: 0 auto;
+  }
+}
