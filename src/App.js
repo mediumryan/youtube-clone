@@ -4,7 +4,9 @@ import Sides from './Components/Sides/Sides';
 import Header from './Components/Header/Header';
 
 const MainWrapper = styled.div`
-    height: 100%;
+    height: 100vh;
+    color: var(--text-100);
+    background-color: var(--bg-100);
 `;
 
 function App() {
