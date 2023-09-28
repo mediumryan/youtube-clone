@@ -1,7 +1,7 @@
 import React from 'react';
 import MetaTitle from './MetaTitle';
 import MetaButtons from './MetaButtons/MetaButtons';
-import MetaDescription from './MetaDescription';
+import MetaDescription from './MetaDescription/MetaDescription';
 import { styled } from 'styled-components';
 
 const MetaDataWrapper = styled.div`

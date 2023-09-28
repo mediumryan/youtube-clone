@@ -33,7 +33,7 @@ const SubButton = styled.button`
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size: var(--font-size-small);
+    font-size: var(--font-size-micro);
     height: 36px;
     border-radius: 36px;
     padding: 0 var(--padding-small);

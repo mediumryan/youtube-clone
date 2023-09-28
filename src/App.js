@@ -5,7 +5,7 @@ import Header from './Components/Header/Header';
 
 const MainWrapper = styled.div`
     position: relative;
-    height: 100vh;
+    height: 100%;
     color: var(--text-100);
     background-color: var(--bg-100);
     display: grid;
