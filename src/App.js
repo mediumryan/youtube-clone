@@ -10,6 +10,10 @@ const MainWrapper = styled.div`
     background-color: var(--bg-100);
     display: grid;
     grid-template-columns: 7fr 3fr;
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
 `;
 
 function App() {

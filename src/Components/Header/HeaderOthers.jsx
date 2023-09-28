@@ -16,6 +16,9 @@ const HeaderOthersWrapper = styled.div`
             background-color: var(--bg-300);
         }
     }
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 export default function HeaderOthers() {

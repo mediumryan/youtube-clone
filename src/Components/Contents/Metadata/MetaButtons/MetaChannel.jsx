@@ -8,6 +8,9 @@ import { FaAngleDown } from 'react-icons/fa';
 const Channel = styled.div`
     display: flex;
     align-items: center;
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        margin: var(--margin-small) 0;
+    }
 `;
 const ChannelLogo = styled.img`
     width: 45px;

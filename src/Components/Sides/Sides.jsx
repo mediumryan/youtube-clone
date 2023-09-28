@@ -6,6 +6,10 @@ import { sideItems } from '../../atom';
 const SidesWrapper = styled.div`
     margin-top: var(--margin-huge);
     padding-right: var(--padding-large);
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        margin-top: var(--margin-medium);
+        padding: 0 var(--padding-medium-large);
+    }
 `;
 
 export default function Sides() {

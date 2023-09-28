@@ -6,6 +6,9 @@ const FindForm = styled.form`
     display: flex;
     align-items: center;
     width: 40%;
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        display: none;
+    }
 `;
 
 const FindInput = styled.input`

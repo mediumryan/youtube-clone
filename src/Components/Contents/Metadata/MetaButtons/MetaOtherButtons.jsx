@@ -7,12 +7,19 @@ import { FaEllipsisH, FaRegThumbsDown, FaRegThumbsUp } from 'react-icons/fa';
 const OtherButtons = styled.div`
     display: flex;
     align-items: center;
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        justify-content: space-between;
+    }
 `;
 
 const LikeHate = styled.div`
     display: flex;
     align-items: center;
     padding: var(--padding-small) var(--padding-medium);
+    @media only screen and (min-width: 320px) and (max-width: 768px) {
+        padding: 0;
+        margin: var(--margin-small) var(--margin-small) var(--margin-small) 0;
+    }
 `;
 
 const Like = styled.button`
@@ -61,7 +68,7 @@ const Share = styled.div`
 `;
 
 const OfflineSave = styled.div`
-    font-size: var(--font-size-micro);
+    font-size: var(--font-size-medium);
     height: 36px;
     border-radius: 36px;
     display: flex;
@@ -71,7 +78,11 @@ const OfflineSave = styled.div`
     margin: 0 var(--margin-small);
     cursor: pointer;
     span {
-        margin-left: var(--margin-small);
+        margin-left: var(--margin-micro);
+        font-size: var(--font-size-micro);
+        @media only screen and (min-width: 320px) and (max-width: 768px) {
+            margin-left: var(--margin-medium);
+        }
     }
     &:hover {
         background-color: var(--bg-300);
