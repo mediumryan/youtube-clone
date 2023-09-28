@@ -11,7 +11,7 @@ const FindForm = styled.form`
 const FindInput = styled.input`
     width: 85%;
     height: 40px;
-    background-color: var(--bg-200);
+    background-color: var(--bg-100);
     border-radius: 40px 0 0 40px;
     border: 1px solid var(--bg-300);
     outline: none;

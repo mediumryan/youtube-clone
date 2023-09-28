@@ -5,6 +5,9 @@ import HeaderFind from './HeaderFind';
 import HeaderOthers from './HeaderOthers';
 
 const HeaderWrapper = styled.div`
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
