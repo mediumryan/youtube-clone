@@ -12,6 +12,7 @@ const HeaderWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     padding: var(--padding-small);
+    background-color: var(--bg-100);
 `;
 
 export default function Header() {

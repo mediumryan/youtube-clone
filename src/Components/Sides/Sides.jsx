@@ -1,21 +1,21 @@
 import { styled } from 'styled-components';
 import SideItems from './SideItems';
+import { useRecoilValue } from 'recoil';
+import { sideItems } from '../../atom';
 
 const SidesWrapper = styled.div`
-    background-color: blue;
     margin-top: var(--margin-huge);
+    padding-right: var(--padding-large);
 `;
 
 export default function Sides() {
+    const item = useRecoilValue(sideItems);
+
     return (
         <SidesWrapper>
-            <SideItems />
-            <SideItems />
-            <SideItems />
-            <SideItems />
-            <SideItems />
-            <SideItems />
-            <SideItems />
+            {item.map((i) => {
+                return <SideItems key={i.id} item={i} />;
+            })}
         </SidesWrapper>
     );
 }
